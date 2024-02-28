@@ -1,1 +1,26 @@
-<p>productos works!</p>
+<div class="div1">
+    <h1>Este es nuestro producto</h1>
+
+    <table class="table table-dark table-striped-columns">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Detalles</th>
+        </tr>
+        </thead>
+        <tbody>
+        @for (producto of listaProductos; track $index) {
+        <tr>
+            <th scope="row">{{producto.id}}</th>
+            <td>{{producto.title}}</td>
+            <td>{{producto.price}}</td>
+            <td>{{producto.description}}</td>
+            <td><button type="button" class="btn btn-outline-primary" (click)="navigate(producto.id)">Detalles</button></td>
+        </tr>
+        }
+        </tbody>
+    </table>
+</div>

@@ -1,1 +1,18 @@
-<p>detalles-producto works!</p>
+<div class="div1">
+    <h2>Detalles del producto</h2>
+
+    @if (loading) {
+        <h5>Cargando...</h5>
+    }
+
+    @if (!loading) {
+        <div class="card" style="width: 18rem;">
+            <img src="{{producto?.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4>{{producto?.price | currency}}</h4>
+                <h5 class="card-title">{{producto?.title}}</h5>
+                <p class="card-text">{{producto?.description}}</p>
+            </div>
+        </div>
+    }
+</div>
