@@ -1,4 +1,6 @@
 .estilo-general{
     background-color: black;
     color: white;
+    min-height: 100vh;
+    height: auto;
 }

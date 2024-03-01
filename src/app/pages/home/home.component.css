@@ -2,8 +2,7 @@
     display: grid;
     justify-items: center;
 }
-img{
-    width: 50%;
-    height: 80%;
-    object-fit: cover;
+#carouselExampleAutoplaying{
+    width: 50vw;
+    height: 80vh;
 }
